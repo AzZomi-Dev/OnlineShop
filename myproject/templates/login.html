@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+    <button class="theme-toggle" id="theme-toggle">Toggle Dark Mode</button>
+    <div class="auth-container">
+        <h2>Login</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="submission" type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="{% url 'register' %}">Register here</a></p>
+        <p class="Profile">Here is: <a href="{% url 'profile' %}">My Profile</a></p>
+    </div>
+    <script src="{% static 'js/dark_mode.js'%}"></script>
+</body>
+
+</html>

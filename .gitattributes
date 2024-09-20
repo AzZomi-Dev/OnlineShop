@@ -1,0 +1,15 @@
+# Auto-detect text files and perform LF normalization
+* text=auto
+
+# Ensure that specific file types use LF
+*.py text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.md text eol=lf
+
+# Ensure that binary files are not modified
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary

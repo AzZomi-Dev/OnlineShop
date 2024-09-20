@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+body.dark-mode {
+    background-color: #121212 !important;
+    color: white;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.theme-toggle {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+}
+
+.theme-toggle:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Auth Container Styles */
+.auth-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.dark-mode .auth-container {
+    color: white;
+    background: #222;
+    border: none;
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.dark-mode .auth-container h2 {
+    color: #fff;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container form input,
+.auth-container form select,
+.auth-container form button {
+    margin-bottom: 20px;
+}
+
+.auth-container form input[type="text"],
+.auth-container form input[type="password"],
+.auth-container form input[type="email"],
+.auth-container form select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+.dark-mode .auth-container form input[type="text"],
+.dark-mode .auth-container form input[type="password"],
+.dark-mode .auth-container form input[type="email"],
+.dark-mode .auth-container form select {
+    background-color: #c2c2c2;
+    border: none;
+    color: rgb(0, 0, 0);
+    margin: 10px 0;
+}
+
+.dark-mode .auth-container form input[type="text"]:focus,
+.dark-mode .auth-container form input[type="password"]:focus,
+.dark-mode .auth-container form input[type="email"]:focus,
+.dark-mode .auth-container form select {
+    background-color: #ffffff;
+    border: none;
+}
+
+.auth-container form button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    background-color: #00a800b7;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-container form button:hover {
+    background-color: #007500d7;
+}
+
+.auth-container p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-container p a {
+    color: #00a800b7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-container p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
